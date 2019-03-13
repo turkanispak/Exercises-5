@@ -1,0 +1,232 @@
+/*
+#include <stdio.h>
+#include <math.h>
+ int main(void)
+ {
+	 double result=0,number=1.0;
+	 while (number<=5)
+	 {
+		 result=sqrt(number);
+		 printf("Square root of %.2lf is %.2lf\n",number,result);
+		 number++;
+	 }
+	 return 0;
+ }
+ */
+ //QUESTION 2
+/*
+ #include <stdio.h>
+ int main(void)
+ {
+	 int count=0;
+	 double number,sum=0,average;
+
+	 while(count<10)
+	 {
+		 printf("Enter a number: ");
+	     scanf("%lf",&number);
+		 sum=sum+number;
+		 count++;
+	 }
+	 
+	 average=sum/10;
+	 printf("Sum of the  10 entered numbers are %.2lf\n",sum);
+	 printf("Average of the 10 entered numbers are %.2lf\n",average);
+	  return 0;
+ }
+ */
+ //QUESTION 3
+/*
+#include <stdio.h>
+ int main(void)
+ {
+	 char letter;
+	 int count=0,counta=0,counte=0,counti=0,counto=0,countu=0;
+
+	 while (count<20)
+	 {
+		 printf("Enter a character: ");
+		 scanf(" %c",&letter);
+
+		 switch (letter)
+		 {
+		 case 'A':
+		 case 'a':
+			 counta++;
+			 break;
+		 case 'E':
+	     case 'e':
+			 counte++;
+			 break;
+		 case 'I':
+		 case 'i':
+			 counti++;
+			 break;
+	     case 'O':
+		 case'o':
+			 counto++;
+			 break;
+	     case 'U':
+		 case'u':
+			 counto++;
+			 break;
+		 }
+		 count++;
+	 }
+	 printf("A repeated %d time(s)\n",counta);
+	 printf("E repeated %d time(s)\n",counte);
+	 printf("I repeated %d time(s)\n",counti);
+	 printf("O repeated %d time(s)\n",counto);
+	 printf("U repeated %d time(s)\n",countu);
+
+	  return 0;
+ }
+ */
+ //QUESTION 4
+/*
+#include <stdio.h>
+ int main(void)
+ {
+	 int count=12,sum=0;
+
+	 while (count<=421)
+	 {
+		 if(count%2==0)
+			 sum=sum+count;
+		 count++;
+	 }
+
+	 printf("Sum of the even numbers between 12 and 421 is %d\n",sum);
+	 return 0;
+ }
+ */
+  //QUESTION 5
+  /*
+  #include <stdio.h>
+ int main(void)
+ {
+	 int n,person,age,countf30=0,countm50=0,totalage=0;
+	 char gender;
+	 printf("How many employees you would like to record? ");
+	 scanf("%d",&n);
+
+	 for(person=1;person<=n;person++)
+	 {
+		 printf("Enter the gender of employee (capital M or F) %d: ",person);
+		 scanf(" %c",&gender);
+		 printf("Enter the age of employee %d: ",person);
+		 scanf("%d",&age);
+		 totalage=totalage+age;
+		 if ( gender == 'F' && age>30)
+			 countf30++;
+		 else if ( gender == 'M' && age<50)
+			 countm50++;
+		 
+	 }
+	 printf("Number of female employees older than 30 is %d\n",countf30);
+	 printf("Number of male employees younger than 50 is %d\n",countm50);
+	 printf("Average age of the employees %.2lf\n",(double)totalage/n);
+	 return 0;
+ }
+ */
+ //QUESTION 6
+ /*
+ #include <stdio.h>
+ int main(void)
+ {
+	 int count,number,maximum;
+	 
+	 printf("Enter an integer number: ");
+	 scanf("%d",&number);
+	 maximum=number;
+	 for(count=1;count<10;count++)
+	 {
+		 printf("Enter an integer number: ");
+	     scanf("%d",&number);
+		 if (number>maximum)
+			 maximum=number;
+	 }
+
+	 printf("Maximum of the 10 integers is %d\n",maximum);
+
+	  return 0;
+ }
+ */
+  //QUESTION 7
+  /*
+  #include <stdio.h>
+
+   int main(void)
+   {
+	 int number,original,last,sum=0,digitcount=0;
+	 printf("Enter the number: ");
+	 scanf("%d",&number);
+	 original=number;
+	 
+	 while(number != 0)
+	 {
+		 last=number%10;
+		 number=number/10;
+		 sum=last+sum;
+		 digitcount++;
+	 }
+
+	 printf("Entered number has %d digits\n",digitcount);
+	 printf("Sum of its digits %d\n",sum);
+	  return 0;
+    }
+ */
+
+
+
+ //QUESTION 9
+/*
+ #include <stdio.h>
+  int main(void)
+  {
+	  int number,couter,cinner,original;
+	  printf("Enter a number: ");
+	  scanf("%d",&number);
+	  while(number>=0)
+	  {
+		 original=number;
+		 printf("Enter a number: ");
+	     scanf("%d",&number);
+	  }
+	  
+		  for(couter=0;couter<original;couter++)
+		  {
+			  for(cinner=original;couter<cinner;cinner--)
+			  {
+				  printf("%d ",cinner);
+			  }
+			  printf("\n");
+		  }
+	  
+  return 0;
+  }
+  */
+
+   //QUESTION 10
+   /*
+    #include <stdio.h>
+     int main(void)
+     {
+		 int number,n,nc;
+		 printf("Input number: ");
+		 scanf("%d",&number);
+		 for(n=0;n<number;n++)
+		 {
+			 for(nc=0;nc<number;nc++)
+			 {
+				 if (n==nc)
+					 printf("1");
+				 else
+					 printf("0");
+			 }
+			 printf("\n");
+		 }
+
+		 return 0;
+    }
+	*/
